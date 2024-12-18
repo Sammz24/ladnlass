@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>Document</title>
+  </head>
+  <body
+    class="font-inter"
+    style="
+      background-image: url('/src/img/bg-gallery2.svg');
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Left Menu -->
+          <div class="hidden md:flex space-x-4">
+            <a
+              href="profile.html"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Profile</a
+            >
+            <a
+              href="index.html#menu"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Menu</a
+            >
+          </div>
+
+          <!-- Logo -->
+          <div class="text-center">
+            <a href="index.html" class="text-lg font-bold text-gray-800"
+              ><img src="../src/img/logo1.png" alt="" class="w-12"
+            /></a>
+          </div>
+
+          <!-- Right Menu -->
+          <div class="hidden md:flex space-x-4">
+            <a
+              href="gallery.html"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Gallery</a
+            >
+            <a
+              href="https://www.instagram.com/ladnlass_/"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Reservation</a
+            >
+          </div>
+
+          <!-- Hamburger Menu -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Home</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >About</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Services</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('/src/img/gallery2.svg')"
+    ></section>
+
+    <!-- Gallery Section -->
+
+    <section class="py-16 bg-transparent">
+      <div class="container mx-auto px-4">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Gallery</h2>
+          <p class="text-gray-600 mt-4">
+            Explore our beautiful collection of images that tell the story of
+            our restaurant.
+          </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Gambar 1 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(1\).svg');
+            "
+          ></div>
+          <!-- Gambar 2 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(2\).svg');
+            "
+          ></div>
+          <!-- Gambar 3 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(3\).svg');
+            "
+          ></div>
+          <!-- Gambar 4 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(4\).svg');
+            "
+          ></div>
+
+          <!-- Gambar Tengah Landscape -->
+          <div
+            class="md:col-span-4 bg-cover bg-center h-64 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(6\).svg');
+            "
+          ></div>
+
+          <!-- Gambar 5 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(5\).svg');
+            "
+          ></div>
+          <!-- Gambar 6 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(7\).svg');
+            "
+          ></div>
+          <!-- Gambar 7 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(8\).svg');
+            "
+          ></div>
+          <!-- Gambar 8 -->
+          <div
+            class="bg-cover bg-center h-48 rounded-lg"
+            style="
+              background-image: url('../src/img/gallery_detail\ \(9\).svg');
+            "
+          ></div>
+        </div>
+
+        <!-- Tombol Lihat Lainnya -->
+        <div class="text-center mt-8">
+          <button
+            id="loadMore"
+            class="px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors"
+          >
+            Lihat Lainnya
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paling digemari -->
+
+    <section class="py-16 bg-transparent">
+      <div class="container mx-auto px-4">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            Our Special Gallery
+          </h2>
+          <p class="text-gray-600 mt-4">
+            Discover the essence of our restaurant through these captivating
+            images.
+          </p>
+        </div>
+
+        <!-- Zigzag Image Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Row 1 - Gambar Kiri -->
+          <div
+            class="bg-cover bg-center h-64 rounded-lg"
+            style="background-image: url('../src/img/special_menu\ \(4\).svg')"
+          ></div>
+          <div class="hidden md:block"></div>
+
+          <!-- Row 2 - Gambar Kanan -->
+          <div class="hidden md:block"></div>
+          <div
+            class="bg-cover bg-center h-64 rounded-lg"
+            style="background-image: url('../src/img/special_menu\ \(3\).svg')"
+          ></div>
+
+          <!-- Row 3 - Gambar Kiri -->
+          <div
+            class="bg-cover bg-center h-64 rounded-lg"
+            style="background-image: url('../src/img/special_menu\ \(2\).svg')"
+          ></div>
+          <div class="hidden md:block"></div>
+
+          <!-- Row 4 - Gambar Kanan -->
+          <div class="hidden md:block mb-12"></div>
+          <div
+            class="bg-cover bg-center h-64 rounded-lg"
+            style="background-image: url('../src/img/special_menu\ \(1\).svg')"
+          ></div>
+        </div>
+
+        <!-- See All Menu Section -->
+        <div class="text-center mt-16">
+          <div class="flex justify-center items-center mb-6">
+            <!-- Icon/Gambar di atas tombol -->
+            <img
+              src="../src/img/menulainnya.svg"
+              alt="Menu Icon"
+              class="mr-3"
+            />
+          </div>
+
+          <!-- Tombol See All Menu -->
+          <a
+            href="#menu"
+            class="px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors"
+          >
+            See All Menu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-orange-500 text-white py-6">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+        <div class="space-x-6">
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/username"
+            target="_blank"
+            class="hover:underline"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            class="hover:underline"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:email@example.com" class="hover:underline">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Menambahkan gambar lain setelah tombol diklik
+      document
+        .getElementById("loadMore")
+        .addEventListener("click", function () {
+          const gallery = document.getElementById("gallery");
+
+          // Menambah gambar-gambar lainnya
+          const newImages = [
+            '<div class="bg-cover bg-center h-48 rounded-lg" style="background-image: url(\'https://source.unsplash.com/400x300/?pasta\');"></div>',
+            '<div class="bg-cover bg-center h-48 rounded-lg" style="background-image: url(\'https://source.unsplash.com/400x300/?pizza\');"></div>',
+            '<div class="bg-cover bg-center h-48 rounded-lg" style="background-image: url(\'https://source.unsplash.com/400x300/?salad\');"></div>',
+            '<div class="bg-cover bg-center h-48 rounded-lg" style="background-image: url(\'https://source.unsplash.com/400x300/?burger\');"></div>',
+            '<div class="md:col-span-2 bg-cover bg-center h-64 rounded-lg" style="background-image: url(\'https://source.unsplash.com/800x600/?wine\');"></div>',
+            '<div class="bg-cover bg-center h-48 rounded-lg" style="background-image: url(\'https://source.unsplash.com/400x300/?steak\');"></div>',
+            '<div class="bg-cover bg-center h-48 rounded-lg" style="background-image: url(\'https://source.unsplash.com/400x300/?sushi\');"></div>',
+            '<div class="bg-cover bg-center h-48 rounded-lg" style="background-image: url(\'https://source.unsplash.com/400x300/?grill\');"></div>',
+          ];
+
+          // Menambahkan gambar-gambar baru ke gallery
+          newImages.forEach((image) => {
+            const div = document.createElement("div");
+            div.innerHTML = image;
+            gallery.appendChild(div);
+          });
+
+          // Menyembunyikan tombol setelah gambar baru ditambahkan
+          document.getElementById("loadMore").style.display = "none";
+        });
+    </script>
+  </body>
+</html>

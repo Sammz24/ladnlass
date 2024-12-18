@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>Lad n Lass</title>
+  </head>
+  <body
+    class="font-inter"
+    style="
+      background-image: url('/src/img/bg-gallery2.svg');
+      background-size: cover;
+      background-position: top;
+    "
+  >
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Left Menu -->
+          <div class="hidden md:flex space-x-4">
+            <a
+              href="profile.html"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Profile</a
+            >
+            <a
+              href="#Menu"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Menu</a
+            >
+          </div>
+
+          <!-- Logo -->
+          <div class="text-center">
+            <a href="index.html" class="text-lg font-bold text-gray-800"
+              ><img src="../src/img/logo1.png" alt="" class="w-12"
+            /></a>
+          </div>
+
+          <!-- Right Menu -->
+          <div class="hidden md:flex space-x-4">
+            <a
+              href="gallery.html"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Gallery</a
+            >
+            <a
+              href="https://www.instagram.com/ladnlass_/"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Reservation</a
+            >
+          </div>
+
+          <!-- Hamburger Menu -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Home</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >About</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Services</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('../src/img/hero-awal.jpg')"
+    >
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-75"
+      ></div>
+
+      <!-- Text Content -->
+      <div
+        class="relative flex items-center justify-center h-full text-center px-4"
+      >
+        <div>
+          <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight">
+            CREATIVE DINNING DESTINATION
+          </h1>
+          <p
+            class="text-gray-300 mt-4 text-lg md:text-xl max-w-xl text-center mx-auto"
+          >
+            We are very open to any collaboration start from creative, wellness
+            or even cultural activity
+          </p>
+          <button
+            class="mt-6 px-6 py-3 bg-orange-400 text-white font-semibold rounded-lg hover:bg-orange-800"
+          >
+          <a href="https://www.instagram.com/ladnlass_/">
+            Get Started
+          </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we served -->
+
+    <section class="py-16">
+      <div class="max-w-full">
+        <div
+          class="container mx-auto px-12 max-w-7xl bg-orange-600 p-12 rounded-3xl"
+        >
+          <!-- Judul Section -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              What We Serve
+            </h2>
+            <p class="text-white mt-4">
+              Explore the amazing features we offer to make your experience
+              unforgettable.
+            </p>
+          </div>
+
+          <!-- Kolom -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <!-- Kolom 1 -->
+            <div class="p-6 text-center">
+              <img
+                src="../src/img/sg (1).svg"
+                alt="Feature 1"
+                class="w-48 mb-12 mx-auto"
+              />
+              <h3 class="text-xl font-semibold text-white">
+                Creative Dinning Destination
+              </h3>
+              <p class="text-white mt-2">
+                Lad & Lass merupakan tempat di mana konsumen dapat
+                mengeksplorasi kreativitas mereka sendiri
+              </p>
+            </div>
+
+            <!-- Kolom 2 -->
+            <div class="p-6 text-center">
+              <img
+                src="../src/img/sg (3).svg"
+                alt="Feature 2"
+                class="w-64 mb-12"
+              />
+              <h3 class="text-xl font-semibold text-white">FnB Coffee Shop</h3>
+              <p class="text-white mt-2">
+                Lad & Lass memberikan layanan luar biasa dan jaminan rasa
+                terbaik
+              </p>
+            </div>
+
+            <!-- Kolom 3 -->
+            <div class="p-6 text-center">
+              <img
+                src="../src/img/sg (2).svg"
+                alt="Feature 3"
+                class="w-64 mb-12"
+              />
+              <h3 class="text-xl font-semibold text-white">
+                Connect with Other
+              </h3>
+              <p class="text-white mt-2">
+                Lad & Lass membuka ruang untuk saling berinteraksi dan bertukar
+                opini
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Menu -->
+
+    <section class="py-16">
+      <div id="Menu" class="container mx-auto px-4">
+        <!-- Judul Section -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            Special Menu
+          </h2>
+          <p class="text-gray-600 mt-4">
+            Discover our special menu selections with unique flavors and
+            affordable prices.
+          </p>
+        </div>
+
+        <!-- Kolom Menu -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="../src/img/Rectangle 426.png"
+              alt="Menu 1"
+              class="w-full object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Nachos</h3>
+              <p class="text-gray-600 mt-2">
+                Nikmati kelezatan nachos dengan tortilla chips renyah, disajikan
+                dengan keju leleh, salsa segar, dan topping pilihan yang
+                menggugah selera.
+              </p>
+            </div>
+            <div class="bg-orange-500 text-white p-4 text-center">
+              <span class="text-xl font-bold">Rp.18.000</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="../src/img/Rectangle 427.png"
+              alt="Menu 2"
+              class="w-full object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Duduk Bersamamu
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Segar dan menyegarkan, minuman jeruk ini dibuat dari perasan
+                jeruk asli yang memberikan rasa asam manis alami yang
+                menyegarkan.
+              </p>
+            </div>
+            <div class="bg-orange-500 text-white p-4 text-center">
+              <span class="text-xl font-bold">Rp.33.000</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="../src/img/Rectangle 428.png"
+              alt="Menu 3"
+              class="w-full object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Dimsum</h3>
+              <p class="text-gray-600 mt-2">
+                Dimsum lezat dengan isian ayam, udang, atau sayuran, dibalut
+                dengan kulit tepung tipis, disajikan dengan saus kecap yang kaya
+                rasa.
+              </p>
+            </div>
+            <div class="bg-orange-500 text-white p-4 text-center">
+              <span class="text-xl font-bold">Rp.15.000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Lihat Lainnya -->
+        <div class="text-center mt-8">
+          <button
+            class="px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors"
+          >
+            Lihat Lainnya
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Menu -->
+
+    <section
+      class="relative h-screen bg-cover"
+      style="background-image: url('../src/img/galleryawal.jpg')"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0"></div>
+
+      <!-- Text Content -->
+      <div
+        class="relative flex items-center justify-center h-full text-center px-4"
+      >
+        <div>
+          <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight">
+            CREATIVE DINNING DESTINATION
+          </h1>
+          <p
+            class="text-gray-300 mt-4 text-lg md:text-xl max-w-xl text-center mx-auto"
+          >
+            We are very open to any collaboration start from creative, wellness
+            or even cultural activity
+          </p>
+          <button
+            class="mt-6 px-6 py-3 bg-orange-400 text-white font-semibold rounded-lg hover:bg-orange-800"
+          >
+          <a href="https://www.instagram.com/ladnlass_/">
+            Get Started
+          </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-orange-500 text-white py-6">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+        <div class="space-x-6">
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/username"
+            target="_blank"
+            class="hover:underline"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            class="hover:underline"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:email@example.com" class="hover:underline">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Toggle mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
