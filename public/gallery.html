@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/output.css" />
-    <title>Document</title>
+    <title>Gallery Lad n Lass</title>
   </head>
   <body
-    class="font-inter"
+    class="font-honken"
     style="
       background-image: url('/src/img/bg-gallery2.svg');
       background-size: cover;
@@ -21,14 +31,14 @@
           <!-- Left Menu -->
           <div class="hidden md:flex space-x-4">
             <a
+              href="index.html"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Beranda</a
+            >
+            <a
               href="profile.html"
               class="text-gray-700 hover:text-gray-900 font-medium"
               >Profile</a
-            >
-            <a
-              href="index.html#menu"
-              class="text-gray-700 hover:text-gray-900 font-medium"
-              >Menu</a
             >
           </div>
 
@@ -47,7 +57,8 @@
               >Gallery</a
             >
             <a
-              href="https://www.instagram.com/ladnlass_/"
+              href="https://www.instagram.com/direct/t/17849173077252250"
+              target="_blank"
               class="text-gray-700 hover:text-gray-900 font-medium"
               >Reservation</a
             >
@@ -77,17 +88,25 @@
 
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >Home</a
+        <a
+          href="index.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Beranda</a
         >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >About</a
+        <a
+          href="profile.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Profile</a
         >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >Services</a
+        <a
+          href="gallery.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Gallery</a
         >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >Contact</a
+        <a
+          href="https://www.instagram.com/direct/t/17849173077252250"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Reservation</a
         >
       </div>
     </nav>
@@ -103,12 +122,12 @@
     <section class="py-16 bg-transparent">
       <div class="container mx-auto px-4">
         <!-- Header Section -->
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Gallery</h2>
-          <p class="text-gray-600 mt-4">
-            Explore our beautiful collection of images that tell the story of
-            our restaurant.
-          </p>
+        <div class="text-center mb-12 justify-center mx-auto">
+          <img
+            src="../src/img/header_gallery.png"
+            class="justify-center mx-auto"
+            alt=""
+          />
         </div>
 
         <!-- Gallery Grid -->
@@ -183,10 +202,12 @@
         <!-- Tombol Lihat Lainnya -->
         <div class="text-center mt-8">
           <button
-            id="loadMore"
+            id=""
             class="px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors"
           >
-            Lihat Lainnya
+            <a href="https://instagram.com/ladnlass_" target="_blank"
+              >Lihat Lainnya</a
+            >
           </button>
         </div>
       </div>
@@ -198,8 +219,8 @@
       <div class="container mx-auto px-4">
         <!-- Header Section -->
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
-            Our Special Gallery
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 font-gluten">
+            Si Paling Digemari
           </h2>
           <p class="text-gray-600 mt-4">
             Discover the essence of our restaurant through these captivating
@@ -211,30 +232,42 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Row 1 - Gambar Kiri -->
           <div
-            class="bg-cover bg-center h-64 rounded-lg"
-            style="background-image: url('../src/img/special_menu\ \(4\).svg')"
+            class="h-96 bg-contain bg-center bg-no-repeat rounded-lg"
+            style="
+              background-image: url('../src/img/special_menu (4).svg');
+              background-repeat: no-repeat;
+            "
           ></div>
           <div class="hidden md:block"></div>
 
           <!-- Row 2 - Gambar Kanan -->
           <div class="hidden md:block"></div>
           <div
-            class="bg-cover bg-center h-64 rounded-lg"
-            style="background-image: url('../src/img/special_menu\ \(3\).svg')"
+            class="h-96 bg-contain bg-center bg-no-repeat rounded-lg"
+            style="
+              background-image: url('../src/img/special_menu (3).svg');
+              background-repeat: no-repeat;
+            "
           ></div>
 
           <!-- Row 3 - Gambar Kiri -->
           <div
-            class="bg-cover bg-center h-64 rounded-lg"
-            style="background-image: url('../src/img/special_menu\ \(2\).svg')"
+            class="h-96 bg-contain bg-center bg-no-repeat rounded-lg"
+            style="
+              background-image: url('../src/img/special_menu (2).svg');
+              background-repeat: no-repeat;
+            "
           ></div>
           <div class="hidden md:block"></div>
 
           <!-- Row 4 - Gambar Kanan -->
           <div class="hidden md:block mb-12"></div>
           <div
-            class="bg-cover bg-center h-64 rounded-lg"
-            style="background-image: url('../src/img/special_menu\ \(1\).svg')"
+            class="h-96 bg-contain bg-center bg-no-repeat rounded-lg"
+            style="
+              background-image: url('../src/img/special_menu (1).svg');
+              background-repeat: no-repeat;
+            "
           ></div>
         </div>
 
@@ -251,7 +284,8 @@
 
           <!-- Tombol See All Menu -->
           <a
-            href="#menu"
+            href="https://drive.google.com/file/d/1M6g0QkjQ5S69BOMWqEAbhVJw91o6Lezy/view"
+            target="_blank"
             class="px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors"
           >
             See All Menu
@@ -260,13 +294,13 @@
       </div>
     </section>
 
-    <footer class="bg-orange-500 text-white py-6">
+    <footer class="bg-oren-utama-ll text-white py-6">
       <div class="container mx-auto px-4 text-center">
-        <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+        <h3 class="text-2xl font-semibold mb-4 font-gluten">Contact Me</h3>
         <div class="space-x-6">
           <!-- Instagram -->
           <a
-            href="https://instagram.com/username"
+            href="https://instagram.com/ladnlass_"
             target="_blank"
             class="hover:underline"
           >
@@ -319,6 +353,15 @@
           // Menyembunyikan tombol setelah gambar baru ditambahkan
           document.getElementById("loadMore").style.display = "none";
         });
+    </script>
+
+    <script>
+      // Toggle mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
     </script>
   </body>
 </html>

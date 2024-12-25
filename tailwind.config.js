@@ -5,15 +5,16 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        gluten: ["Gluten", "sans-serif"],
+        honken: ["Honken Grotesk", "sans-serif"],
       },
       colors: {
-        "biru-utama": "#38446D",
-        "cok-daycare": "#9B6B53",
-        "ijomuda-daycare": "#ACDCDD",
-        "ijotosca-daycare": "#24A5A9",
-        "pink-daycare": "#F9888E",
-        "kuning-daycare": "#F6DC66",
-        "Ijolime-daycare": "#BCC35A",
+        "oren-utama-ll": "#FF6A29",
+        "surface-ll": "#FFE1D4",
+        "border-ll": "#FFCDB8",
+        "hover-ll": "#AA471B",
+        "pressed-ll": "#55230E",
+        "focus-ll": "#FF6A29",
       },
     },
   },

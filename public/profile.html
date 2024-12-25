@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/output.css" />
-    <title>Document</title>
+    <title>Profile Lad n Lass</title>
   </head>
   <body
-    class="font-inter"
+    class="font-honken"
     style="
       background-image: url('/src/img/bg-gallery2.svg');
       background-size: cover;
@@ -21,14 +31,14 @@
           <!-- Left Menu -->
           <div class="hidden md:flex space-x-4">
             <a
+              href="index.html"
+              class="text-gray-700 hover:text-gray-900 font-medium"
+              >Beranda</a
+            >
+            <a
               href="profile.html"
               class="text-gray-700 hover:text-gray-900 font-medium"
               >Profile</a
-            >
-            <a
-              href="index.html#menu"
-              class="text-gray-700 hover:text-gray-900 font-medium"
-              >Menu</a
             >
           </div>
 
@@ -47,7 +57,7 @@
               >Gallery</a
             >
             <a
-              href="https://www.instagram.com/ladnlass_/"
+              href="https://www.instagram.com/direct/t/17849173077252250"
               class="text-gray-700 hover:text-gray-900 font-medium"
               >Reservation</a
             >
@@ -77,17 +87,26 @@
 
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >Home</a
+        <a
+          href="index.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Beranda</a
         >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >About</a
+        <a
+          href="profile.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Profile</a
         >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >Services</a
+        <a
+          href="gallery.html"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Gallery</a
         >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-          >Contact</a
+        <a
+          href="https://www.instagram.com/direct/t/17849173077252250"
+          target="_blank"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Reservation</a
         >
       </div>
     </nav>
@@ -102,13 +121,15 @@
       "
     >
       <div
-        class="container mx-auto px-12 bg-white rounded-3xl border-8 border-orange-600"
+        class="container mx-auto px-12 bg-white rounded-3xl border-8 border-orange-600 py-8"
       >
         <!-- Hero Section -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <!-- Left Column: Header, Deskripsi, dan Gambar -->
           <div class="text-center md:text-left">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-gluten"
+            >
               About Us
             </h2>
             <p class="text-gray-600 mb-6 max-w-lg">
@@ -135,11 +156,11 @@
       </div>
     </section>
 
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-gray-50 max-w-full">
       <div class="container mx-auto px-4">
         <!-- Section Header -->
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 font-gluten">
             Meet Our Crew
           </h2>
           <p class="text-gray-600 mt-4">
@@ -149,41 +170,54 @@
         </div>
 
         <!-- Crew Members -->
-        <div class="space-y-12">
+        <div class="space-y-12 max-w-7xl mx-auto px-8">
           <!-- Row 1 - Gambar Kiri, Header & Deskripsi Kanan -->
           <div class="flex flex-col md:flex-row items-center">
-            <div class="w-full md:w-1/3 mb-4 md:mb-0">
+            <div class="w-full lg:w-1/3 mb-4 md:mb-0">
               <img
                 src="../src/img/jess.svg"
                 alt="Crew Member 1"
                 class="w-full object-cover"
               />
             </div>
-            <div class="md:ml-8 text-center md:text-left">
-              <h3 class="text-2xl font-semibold text-gray-800">Jessica (Je)</h3>
-              <p class="text-gray-600 mt-4">
-                Meet Je: Gen-Z boss, entrepreneur, Cancer baby, and content creator extraordinaire.
+            <div class="md:ml-8 text-center md:text-left max-w-2xl">
+              <h1 class="text-5xl font-semibold font-gluten text-black">
+                Jessica (Je)
+              </h1>
+              <p class="text-black mt-2 text-xl mb-2">
+                Meet Je: Gen-Z boss, entrepreneur, Cancer baby, and content
+                creator extraordinaire.
               </p>
-              <h3 class="text-2xl font-semibold text-gray-800">What do you think about Lad&Lass ?</h3>
-              <p class="text-gray-600 mt-4">
-                Lad&Lass represents Me. Me, myself as a place that bring cheerful, joy, and a place for people to bring creativity. No judgement here, just pure FUN
+              <h3 class="text-2xl font-semibold text-gray-800 font-gluten">
+                What do you think about Lad&Lass ?
+              </h3>
+              <p class="text-black mt-2 text-xl">
+                Lad&Lass represents Me. Me, myself as a place that bring
+                cheerful, joy, and a place for people to bring creativity. No
+                judgement here, just pure FUN
               </p>
             </div>
           </div>
 
           <!-- Row 2 - Gambar Kanan, Header & Deskripsi Kiri -->
-          <div class="flex flex-col md:flex-row items-center">
-            <div class="md:mr-8 text-center md:text-left">
-              <h3 class="text-2xl font-semibold text-gray-800">Mas Jere</h3>
-              <p class="text-gray-600 mt-4">
-                Meet Mas Jer: 2001-born, horoscope Kerbau, passive income pro, and our chef with flair
+          <div class="flex flex-col md:flex-row items-center justify-center">
+            <div class="md:mr-8 text-center md:text-left max-w-2xl">
+              <h1 class="text-5xl font-semibold font-gluten text-black">
+                Mas Jer
+              </h1>
+              <p class="text-black mt-2 text-xl mb-2">
+                Meet Mas Jer: 2001-born, horoscope Kerbau, passive income pro,
+                and our chef with flair.
               </p>
-              <h3 class="text-2xl font-semibold text-gray-800">What do you think about Lad&Lass ?</h3>
-              <p class="text-gray-600 mt-4">
-                Lad&Lass is a cozy spot where drinks flow, fun vibes thrive, and memories are made with friends and family.
+              <h3 class="text-2xl font-semibold text-gray-800 font-gluten">
+                What do you think about Lad&Lass ?
+              </h3>
+              <p class="text-black mt-2 text-xl">
+                Lad&Lass is a cozy spot where drinks flow, fun vibes thrive, and
+                memories are made with friends and family.
               </p>
             </div>
-            <div class="w-full md:w-1/3 mt-4 md:mt-0">
+            <div class="w-full lg:w-1/3 mt-4 md:mt-0">
               <img
                 src="../src/img/el.svg"
                 alt="Crew Member 2"
@@ -194,21 +228,28 @@
 
           <!-- Row 3 - Gambar Kiri, Header & Deskripsi Kanan -->
           <div class="flex flex-col md:flex-row items-center">
-            <div class="w-full md:w-1/3 mb-4 md:mb-0">
+            <div class="w-full lg:w-1/3 mb-4 md:mb-0">
               <img
                 src="../src/img/rajul.svg"
                 alt="Crew Member 3"
                 class="w-full object-cover"
               />
             </div>
-            <div class="md:ml-8 text-center md:text-left">
-              <h3 class="text-2xl font-semibold text-gray-800">Mas Rajul</h3>
-              <p class="text-gray-600 mt-4">
-                Meet Mas Jul: Digital advertisement person, horoscope macan, and a multitasking pro.
+            <div class="md:ml-8 text-center md:text-left max-w-2xl">
+              <h3 class="text-5xl font-semibold font-gluten text-black">
+                Mas Rajul
+              </h3>
+              <p class="text-black mt-2 text-xl mb-2">
+                Meet Mas Jul: Digital advertisement person, horoscope macan, and
+                a multitasking pro.
               </p>
-              <h3 class="text-2xl font-semibold text-gray-800">What do you think about Lad&Lass ?</h3>
-              <p class="text-gray-600 mt-4">
-                Lad&Lass is a second home—where aesthetics meet creativity. It’s the perfect place to relax, connect, and find inspiration in every moment.
+              <h3 class="text-2xl font-semibold text-gray-800 font-gluten">
+                What do you think about Lad&Lass ?
+              </h3>
+              <p class="text-black mt-2 text-xl">
+                Lad&Lass is a second home—where aesthetics meet creativity. It’s
+                the perfect place to relax, connect, and find inspiration in
+                every moment.
               </p>
             </div>
           </div>
@@ -216,13 +257,13 @@
       </div>
     </section>
 
-    <footer class="bg-orange-500 text-white py-6">
+    <footer class="bg-oren-utama-ll text-white py-6">
       <div class="container mx-auto px-4 text-center">
-        <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+        <h3 class="text-2xl font-semibold mb-4 font-gluten">Contact Me</h3>
         <div class="space-x-6">
           <!-- Instagram -->
           <a
-            href="https://instagram.com/username"
+            href="https://instagram.com/ladnlass_"
             target="_blank"
             class="hover:underline"
           >
@@ -245,5 +286,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Toggle mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
